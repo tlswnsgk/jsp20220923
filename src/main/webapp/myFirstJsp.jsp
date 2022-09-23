@@ -9,6 +9,13 @@
 <body>
 	<h1>투데이 이즈 환승연애2</h1>
 	
-	ul.note#list1>li*5.lorem2							
+	<!--ctrl shift /  -->
+	<ul class="note" id="list1">
+		<li>Lorem ipsum.</li>
+		<li>Sequi excepturi.</li>
+		<li>Beatae deserunt.</li>
+		<li>Enim odio.</li>
+		<li>Et distinctio!</li>
+	</ul>							
 </body>
 </html>
