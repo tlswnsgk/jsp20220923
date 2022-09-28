@@ -7,16 +7,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h>파라미터</h>
-	<p>q 파라미터 : <%= request.getParameter("q") %></p>
+	<h1>파라미터</h1>
+	<p>
+		q 파라미터 :
+		<%=request.getParameter("q")%></p>
 	<%
 	String q = request.getParameter("q");
-	
-	if (q == null){
-		out.print("파라미터 입력해라");
-	}else{
-	out.print(q+"의 검색결과");		 
-		
+
+	if (q == null) {
+		out.print("파라미터를 입력하세요.");
+	} else {
+		out.print(q + "의 검색 결과 입니다.");
 	}
 	%>
 
