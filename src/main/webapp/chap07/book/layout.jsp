@@ -5,28 +5,30 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>layout1</title>
 </head>
 <body>
-	<table width="400" border="1" cellpadding="0" cellspacing="0">
+	<table width="400" border="1" cellpadding= "0" cellspacing="0">
 		<tr>
 			<td colspan="2">
-				<jsp:include page="module/top.jsp"></jsp:include>
+			<jsp:include page="module/top.jsp"></jsp:include>
 			</td>
 		</tr>
 		<tr>
-			<td width="100" valign="top">
+			<td width = "100" valign = "top">
 				<jsp:include page="module/left.jsp"></jsp:include>
 			</td>
-			<td>
-				레이아웃 1
+			<td width="300" valign ="top">
+				<!-- 내용 부분 : 시작 -->
+				레이아웃1
 				<br>
 				<br>
 				<br>
+				<!-- 내용 부분 : 끝 -->
 			</td>
 		</tr>
 		<tr>
-			<td colspan="2">
+			<td coldspan ="2">
 				<jsp:include page="module/bottom.jsp"></jsp:include>
 			</td>
 		</tr>

@@ -8,18 +8,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-int number = 10;
-%>
-<%@ include file ="includee.jspf" %>
-공통변수 DATAFOLDER = "<%= dataFolder %>"
+	<%
+	String name = (String)session.getAttribute("userName");
+if(name == null) {
+	name = "guest";
+}
+	
+	%>
+	<h1><%= name %>님이 other1페이지 사용중</h1>
+	<a href="main.jsp">메인 페이지로 이동</a>
 </body>
 </html>
-
-
-
-
-
-
-
-

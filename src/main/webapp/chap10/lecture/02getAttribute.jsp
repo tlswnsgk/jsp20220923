@@ -8,18 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-int number = 10;
-%>
-<%@ include file ="includee.jspf" %>
-공통변수 DATAFOLDER = "<%= dataFolder %>"
+	<h1>세션에서 꺼낸 임의의 수</h1>
+	<h1><%= session.getAttribute("random number") %></h1>
 </body>
 </html>
-
-
-
-
-
-
-
-

@@ -8,18 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-int number = 10;
-%>
-<%@ include file ="includee.jspf" %>
-공통변수 DATAFOLDER = "<%= dataFolder %>"
+	<h1>쿠키를 응답(response)에 담앗 보내기</h1>
+	<%
+	Cookie cookie = new Cookie("my-cookie1","my-value1");
+	response.addCookie(cookie);
+	%>
 </body>
 </html>
-
-
-
-
-
-
-
-

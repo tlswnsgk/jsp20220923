@@ -8,13 +8,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-int number = 10;
-%>
-<%@ include file ="includee.jspf" %>
-공통변수 DATAFOLDER = "<%= dataFolder %>"
+	<h1>30일 유지되는 쿠키 만들기</h1>
+	<a href="02readCookie.jsp">쿠키 보러 가기</a>
+	<%
+	Cookie cookie = new Cookie("my-cookie2", "my-value2");
+	cookie.setMaxAge(30 * 24 * 60 * 60);
+	response.addCookie(cookie);
+	%>
 </body>
 </html>
+
+
 
 
 

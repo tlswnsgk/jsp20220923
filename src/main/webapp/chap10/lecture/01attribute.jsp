@@ -9,17 +9,11 @@
 </head>
 <body>
 <%
-int number = 10;
+double num = Math.random();
+System.out.println("세션에 들어간 값:"+num);
+session.setAttribute("random number", num);
 %>
-<%@ include file ="includee.jspf" %>
-공통변수 DATAFOLDER = "<%= dataFolder %>"
+<h1>세션에 랜던한 값 들어감</h1>
+<h1><%= num %></h1>
 </body>
 </html>
-
-
-
-
-
-
-
-

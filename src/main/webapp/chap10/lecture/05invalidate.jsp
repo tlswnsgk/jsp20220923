@@ -8,18 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-int number = 10;
-%>
-<%@ include file ="includee.jspf" %>
-공통변수 DATAFOLDER = "<%= dataFolder %>"
+	<h1>세션 종료</h1>
+	<%
+	session.invalidate();
+	
+	%>
+	<a href="04aboutSession.jsp">세션 정보보기</a>
 </body>
 </html>
-
-
-
-
-
-
-
-

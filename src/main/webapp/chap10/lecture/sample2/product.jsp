@@ -8,13 +8,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-int number = 10;
-%>
-<%@ include file ="includee.jspf" %>
-공통변수 DATAFOLDER = "<%= dataFolder %>"
+	<h1>상품</h1>
+	<form action="cart.jsp" method="post">
+		상품명 : <input type="text" name="product" value="노트북">
+		<input type="submit" value="장바구니에 추가">
+	</form>
+	
 </body>
 </html>
+
+
 
 
 
