@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>
 <% request.setCharacterEncoding("utf-8"); %>
 <!DOCTYPE html>
 <html>
@@ -8,19 +9,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>쿠키를 응답(response)에 담아서 보내기</h1>
-	<a href="02readCookie.jsp">쿠키 보러가기</a>
-	<br>
-	<a href="05deleteCookie.jsp">쿠키 지우기</a>
 	<%
-	Cookie cookie = new Cookie("my-cookie1", "my-value1");
-	response.addCookie(cookie);
+	pageContext.setAttribute("people", "사람들");
+	request.setAttribute("people", Map.of("bts", "jimin", "bp", "jenny"));
 	%>
+	
+	<p>${requestScope.people.bts }</p><%-- jimin --%>
+	<p>${requestScope.people.bp }</p><%-- jenny --%>
 </body>
 </html>
-
-
-
 
 
 

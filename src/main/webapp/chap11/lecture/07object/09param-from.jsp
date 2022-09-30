@@ -8,22 +8,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>30일 유지되는 쿠키 만들기</h1>
-	<a href="02readCookie.jsp">쿠키 보러 가기</a>
-	<%
-	Cookie cookie = new Cookie("my-cookie2", "my-value2");
-	cookie.setMaxAge(30 * 24 * 60 * 60);
-	response.addCookie(cookie);
-	%>
+	<form action="09param-to.jsp" method="post">
+		이름 <input type="text" name="name" value="홍길동"> <br>
+		주소 <input type="text" name="address" value="서울"> <br>
+		<input type="submit" value="전송">
+	</form>
 </body>
 </html>
-
-
-
-
-
-
-
 
 
 

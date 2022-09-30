@@ -8,28 +8,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>30일 유지되는 쿠키 만들기</h1>
-	<a href="02readCookie.jsp">쿠키 보러 가기</a>
 	<%
-	Cookie cookie = new Cookie("my-cookie2", "my-value2");
-	cookie.setMaxAge(30 * 24 * 60 * 60);
-	response.addCookie(cookie);
+		java.util.List<String> list = java.util.List.of("java","css","spring");
+		request.setAttribute("attr1", list);
 	%>
+	<p>${attr1[0] }</p>
+	<p>${attr1[1] }</p>
+	<p>${attr1[2] }</p>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,28 +8,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>30일 유지되는 쿠키 만들기</h1>
-	<a href="02readCookie.jsp">쿠키 보러 가기</a>
-	<%
-	Cookie cookie = new Cookie("my-cookie2", "my-value2");
-	cookie.setMaxAge(30 * 24 * 60 * 60);
-	response.addCookie(cookie);
-	%>
+	<p>주문일자 : ${param.date }</p>
+	<p>상품 : ${paramValues.prod[0] }</p>
+	<p>상품 : ${paramValues.prod[1] }</p>
+	<p>상품 : ${paramValues.prod[2] }</p>
+	<p>상품 : ${paramValues.prod[3] }</p>
+	<p>상품 : ${paramValues.prod[4] }</p>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -11,14 +11,8 @@ if (cookies != null) {
 		if (cookie.getName().equals("k")) {
 			keyword = URLDecoder.decode(cookie.getValue(), "utf-8");
 		}
-
-cookie.setMaxAge(30 * 24 * 60 * 60);
-response.addCookie(cookie);
 	}
-
 }
-
-
 %>
 
 <h3><%= keyword %> 광고 입니다.</h3>

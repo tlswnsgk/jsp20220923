@@ -8,22 +8,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>쿠키 값 변경</h1>
-	<%
-	Cookie cookie = new Cookie("my-cookie1", "my-value2");
-	
-	response.addCookie(cookie);
-	%>
-	
-	<a href="02readCookie.jsp">쿠키 보러 가기</a>
+<%
+	java.util.List<String> list = java.util.List.of("tlswnsgk","wnsgk","tlswns");
+	request.setAttribute("k",1);
+	request.setAttribute("x",2);
+%>
+
+	<p>${list[0] }</p>
+	<p>${list[k] }</p>
+	<p>${list[x] }</p>
 </body>
 </html>
-
-
-
-
-
-
-
-
-

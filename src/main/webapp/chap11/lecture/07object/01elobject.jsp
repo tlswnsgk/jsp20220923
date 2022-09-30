@@ -8,23 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>30일 유지되는 쿠키 만들기</h1>
-	<a href="02readCookie.jsp">쿠키 보러 가기</a>
-	<%
-	Cookie cookie = new Cookie("my-cookie2", "my-value2");
-	cookie.setMaxAge(30 * 24 * 60 * 60);
-	response.addCookie(cookie);
-	%>
+	<h3>el 기본 객체 (책 254쪽 표 참고)</h3>
+	
 </body>
 </html>
-
-
-
-
-
-
-
-
 
 
 

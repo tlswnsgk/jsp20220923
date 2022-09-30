@@ -8,22 +8,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>쿠키 값 변경</h1>
-	<%
-	Cookie cookie = new Cookie("my-cookie1", "my-value2");
-	
-	response.addCookie(cookie);
-	%>
-	
-	<a href="02readCookie.jsp">쿠키 보러 가기</a>
+	<h3>el param 사용</h3>
+	<%-- ?age=99&email=abc@gmail --%>
+	<p>${param.age }</p>
+	<p>${param.email }</p>
 </body>
 </html>
-
-
-
-
-
-
-
-
-

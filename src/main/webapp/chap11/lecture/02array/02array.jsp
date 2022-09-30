@@ -8,19 +8,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>모든 쿸이 보기</h1>
-	
 	<%
-	Cookie[] cookies = request.getCookies();
-	
-	if (cookies != null) {
-		for(Cookie cookie : cookies) {
-			out.print("<li>");
-			out.print(cookie.getName()+":");
-			out.print(cookie.getValue());
-			out.print("<li>");
-		}
-	}
+	String[] arrsong = {"congrats","you","fuck"};
+	request.setAttribute("song", arrsong);
 	%>
+	<hr>
+	<p>${song[0] }</p>
+	<p>${song[1] }</p>
+	<p>${song[2] }</p>
 </body>
 </html>

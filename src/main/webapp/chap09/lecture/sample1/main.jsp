@@ -40,7 +40,8 @@
 			<%
 				String k = URLEncoder.encode(q, "utf-8");
 				Cookie cookie = new Cookie("k", k);
-				cookie.setMaxAge(30 * 24 * 60 * 60);
+				cookie.setMaxAge(24 * 60 * 60); // 초단위
+				cookie.setPath("/");
 				response.addCookie(cookie);
 			}
 			%>

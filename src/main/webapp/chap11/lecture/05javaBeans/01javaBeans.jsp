@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import = "jsp20220923.chap07.Book" %>
 <% request.setCharacterEncoding("utf-8"); %>
 <!DOCTYPE html>
 <html>
@@ -8,28 +9,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>30일 유지되는 쿠키 만들기</h1>
-	<a href="02readCookie.jsp">쿠키 보러 가기</a>
+	<h3>el을 사용해서 javaBeans의 프로퍼티를 사용할 수 있다</h3>
 	<%
-	Cookie cookie = new Cookie("my-cookie2", "my-value2");
-	cookie.setMaxAge(30 * 24 * 60 * 60);
-	response.addCookie(cookie);
+	Book b1 = new Book("java",500);
+	request.setAttribute("book1", b1);
+	
 	%>
+	
+	<p>${book1 }</p>
+	<p></p>
+	<p></p>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
