@@ -8,10 +8,19 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>el 기본 객체 (책 254쪽 표 참고)</h3>
-	
+	<h3>${empty param.name ? "guest" : name }님 반갑습니다.</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
-
-
-

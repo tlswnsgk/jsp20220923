@@ -8,10 +8,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>el 기본 객체 (책 254쪽 표 참고)</h3>
+	<%
+	pageContext.setAttribute("attr1", "");
+	pageContext.setAttribute("attr2", "java");
+	%>
+	
+	<p>${not empty attr1 }</p>
+	<p>${not empty attr2 }</p>
+	
+	
 	
 </body>
 </html>
-
-
-

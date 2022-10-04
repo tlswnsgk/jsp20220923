@@ -8,10 +8,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>el 기본 객체 (책 254쪽 표 참고)</h3>
+	<h3>삼항 연산자</h3>
 	
+	<p>${true ? 1 : 2 }</p>
+	<p>${false ? 1 :2 }</p>
+	
+
+
+
+
+
+
+
+
 </body>
 </html>
-
-
-

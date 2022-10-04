@@ -8,10 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>el 기본 객체 (책 254쪽 표 참고)</h3>
-	
+	<p>${param.num1 + param.num2 }</p>
+	<p>${param.num3 - param.num4 }</p>
 </body>
 </html>
-
-
-

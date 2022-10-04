@@ -8,10 +8,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>el 기본 객체 (책 254쪽 표 참고)</h3>
-	
+	<p>${param.a+param.b }</p>
+	<p>${param.x-param.y }</p>
+	<p>${param.num1 / param.num2 }</p>
+	<%-- http://localhost:8080/jsp20220923/chap11/lecture/08operator/04artihmetic.jsp?a=5&b=3&x=5&y=2&num1=10&num2=2 --%>
 </body>
 </html>
-
-
-

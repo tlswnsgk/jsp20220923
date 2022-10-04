@@ -8,10 +8,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>el 기본 객체 (책 254쪽 표 참고)</h3>
-	
+	<p>
+	${"guest" }	
+	</p>
+	<p>
+	${'guest' }	
+	</p>
+
+
+
+
 </body>
 </html>
-
-
-

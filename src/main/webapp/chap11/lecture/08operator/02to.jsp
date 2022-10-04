@@ -8,10 +8,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>el 기본 객체 (책 254쪽 표 참고)</h3>
-	
+	<p>+ : ${num1 + num2 }</p>
+	<p>- : ${num3 - num4 }</p>
+	<p>* : ${n5 * n6 }</p>
+	<p>/ : ${n7 / n8 }</p>
+	<p>% : ${n9 % n10}</p>
 </body>
 </html>
+
+
+
+
+
+
+
 
 
 
