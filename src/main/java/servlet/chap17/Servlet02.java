@@ -26,7 +26,7 @@ public class Servlet02 extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println(2222222);
+		System.out.println("두번째 서블릿이 일함!!!!!!!!!");
 	}
 
 	/**

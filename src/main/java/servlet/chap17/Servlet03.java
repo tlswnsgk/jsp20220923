@@ -26,14 +26,14 @@ public class Servlet03 extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("33333333333333");
+		System.out.println("세번째 서블릿 일함########");
 		
-		//일한 결과를 객체에 담아서 
-		request.setAttribute("result", "일한 결과");
+		// 일한 결과를 객체에 담아서
+		request.setAttribute("result", "일한 결과!!!!!!");
 		
-		//jsp로 forward
-		String jspPath = "WEB-INF/view/chap17/view02.jsp";
-		request.getRequestDispatcher(jspPath).forward(request,response);
+		// jsp로 forward
+		String jspPath = "/WEB-INF/view/chap17/view02.jsp";
+		request.getRequestDispatcher(jspPath).forward(request, response);
 	}
 
 	/**
